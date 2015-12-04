@@ -23,7 +23,7 @@
 		$dir = GetDirectory(); // Gets the library directory's actual position.
 				
 		// Gets the classes inside the library directory.
-		foreach(glob($dir . '/*.class.php') as $file) {
+		foreach(glob($dir . '*.class.php') as $file) {
 			require_once $file;
 		}
 		
